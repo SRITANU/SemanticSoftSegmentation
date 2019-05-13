@@ -9,7 +9,7 @@ x = mat['embedmap']
 
 x = np.reshape(x, ((h*w), d))
 
-pca = PCA()
+pca = PCA(n_components=3)
 
 y = pca.fit_transform(x)
 
